@@ -14,6 +14,7 @@ module.exports = function (wallaby) {
       { pattern: 'node_modules/chai/chai.js', instrument: false },
       { pattern: 'node_modules/react/dist/react-with-addons.js', instrument: false },
       { pattern: 'node_modules/react-dom/dist/react-dom.js', instrument: false },
+      { pattern: 'node_modules/typescript/lib/lib.es5.d.ts', instrument: false },
       { pattern: 'src/mixins/**/*', instrument: false },
       { pattern: 'src/assets/**/*', load: false },
       { pattern: 'src/**/*.{ts,tsx}', load: false },
