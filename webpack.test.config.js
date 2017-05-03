@@ -24,11 +24,6 @@ module.exports = {
       'process.env.DISABLE_INCOMPLETE': Boolean(process.env.DISABLE_INCOMPLETE),
       'process.env.DISABLE_EXPERIMENTAL': Boolean(process.env.DISABLE_EXPERIMENTAL),
     }),
-    new webpack.ProvidePlugin({
-      chai: 'chai',
-      react: 'react/dist/react-with-addons',
-      React: 'react/dist/react-with-addons',
-    }),
     new webpack.NormalModuleReplacementPlugin(/\.(css)$/, 'node-noop'),
 
     // Conditional requires workaround
@@ -39,9 +34,6 @@ module.exports = {
     new webpack.IgnorePlugin(/react\/lib\/ExecutionEnvironment/)
   ],
   externals: {
-    // Do not bundle React to the test bundle
-    'react': 'React',
-    'react-dom': 'ReactDOM',
     // Conditional requires workaround
     // https://github.com/airbnb/enzyme/issues/47
     // https://github.com/airbnb/enzyme/blob/master/docs/guides/webpack.md
