@@ -1,11 +1,35 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
     "sourceMap": true,
-    "jsx": "preserve"
+    "target": "es5",
+    "jsx": "react",
+    "module": "es6",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "pretty": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "removeComments": true,
+    "strictNullChecks": false,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "src/*",
+        "*"
+      ]
+    },
+    "lib": [
+      "es6",
+      "es7",
+      "dom"
+    ]
   },
   "exclude": [
+    "dist",
     "node_modules"
   ]
 }
