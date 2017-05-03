@@ -1,0 +1,32 @@
+{
+  "name": "wallaby-1138",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemGovorov/wallaby-1138.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtemGovorov/wallaby-1138/issues"
+  },
+  "homepage": "https://github.com/ArtemGovorov/wallaby-1138#readme",
+  "devDependencies": {
+    "@types/mocha": "^2.2.41",
+    "babel-polyfill": "^6.23.0",
+    "chai": "^3.5.0",
+    "mobx": "^3.1.9",
+    "mobx-react": "^4.1.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1",
+    "typescript": "^2.3.1",
+    "wallaby-webpack": "0.0.38",
+    "webpack": "^2.4.1"
+  }
+}
